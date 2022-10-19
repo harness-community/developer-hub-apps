@@ -1,5 +1,9 @@
 # prometheus-sample-app
 
+**This is a Fork From**:
+
+https://github.com/open-o11y/prometheus-sample-app
+
 This Prometheus sample app generates all 4 Prometheus metric types (counter, gauge, histogram, summary) and exposes them at the `/metrics` endpoint
 
 A health check endpoint also exists at `/`
