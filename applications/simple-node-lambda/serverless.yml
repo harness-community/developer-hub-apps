@@ -9,7 +9,7 @@ functions:
     handler: handler.hello
     events:
       - httpApi:
-          path: /tello
+          path: /hello
           method: get  
 package:
   artifact: <+artifact.path>        
