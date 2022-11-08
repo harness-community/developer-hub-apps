@@ -1,0 +1,43 @@
+# This harness-delegate-values.yaml file is compatible harness-delegate-ng helm chart. 
+# Replace the accountId, delegateToken and delegateName values if you are not providing them at install time.
+# Follow the instructions below to install the helm chart.
+
+# helm repo add harness https://app.harness.io/storage/harness-download/harness-helm-charts/
+# helm upgrade -i <delegate-name> --namespace <namespace> --create-namespace harness/harness-delegate-ng -f harness-delegate-values.yaml
+
+# Account Id to which the delegate will be connecting
+# accountId: PUT_YOUR_HARNESS_ACCOUNTID_HERE
+
+# One of the delegateTokens associated with the account
+# delegateToken: PUT_YOUR_DELEGATE_TOKEN_HERE
+
+# Unique name of your delegate
+# delegateName: PUT_YOUR_DELEGATE_NAME_HERE
+
+# A valid delegate image tag
+delegateDockerImage: harness/delegate-immutable:22.10.77021 
+
+# Endpoint of Harness Manager, default is set to SaaS Manager. Should be overridden for Self-Managed Enterprise Edition
+managerEndpoint: https://app.harness.io/gratis
+
+# Mention tags that will be used to identify delegate
+tags: ""
+description: ""
+
+# Specify access for delegate, CLUSTER_ADMIN, CLUSTER_VIEWER and NAMESPACE_ADMIN are valid entries.
+k8sPermissionsType: CLUSTER_ADMIN
+
+# Resource Configuration
+replicas: 1
+cpu: 0.5
+memory: 2g
+
+# Need to run something specific before the delegate starts, enter your script in initScripts.
+initScript: ""
+
+# Specify JAVA_OPTS
+javaOpts: "-Xms64M"
+
+# Set to true to run delegate as root
+securityContext:
+  runAsRoot: true
