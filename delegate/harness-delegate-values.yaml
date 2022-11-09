@@ -15,7 +15,7 @@
 # delegateName: PUT_YOUR_DELEGATE_NAME_HERE
 
 # A valid delegate image tag
-delegateDockerImage: harness/delegate-immutable:22.10.77021 
+delegateDockerImage: harness/delegate:22.10.77221 
 
 # Endpoint of Harness Manager, default is set to SaaS Manager. Should be overridden for Self-Managed Enterprise Edition
 managerEndpoint: https://app.harness.io/gratis
@@ -30,7 +30,7 @@ k8sPermissionsType: CLUSTER_ADMIN
 # Resource Configuration
 replicas: 1
 cpu: 0.5
-memory: 2g
+memory: 2048
 
 # Need to run something specific before the delegate starts, enter your script in initScripts.
 initScript: ""
