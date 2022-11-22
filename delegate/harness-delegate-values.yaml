@@ -14,11 +14,11 @@
 # Unique name of your delegate
 # delegateName: PUT_YOUR_DELEGATE_NAME_HERE
 
-# A valid delegate image tag
-delegateDockerImage: harness/delegate:22.10.77221 
-
 # Endpoint of Harness Manager, default is set to SaaS Manager. Should be overridden for Self-Managed Enterprise Edition
-managerEndpoint: https://app.harness.io/gratis
+# managerEndpoint: PUT_YOUR_MANAGER_HOST_AND_PORT_HERE
+
+# A valid delegate image tag
+delegateDockerImage: harness/delegate:22.11.77436
 
 # Mention tags that will be used to identify delegate
 tags: ""
