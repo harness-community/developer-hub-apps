@@ -53,7 +53,7 @@ spec:
         harness.io/name: PUT_YOUR_DELEGATE_NAME_HERE
     spec:
       containers:
-      - image: harness/delegate:22.10.77221
+      - image: harness/delegate:22.11.77436
         imagePullPolicy: Always
         name: harness-delegate-instance
         ports:
@@ -88,7 +88,7 @@ spec:
         - name: ACCOUNT_ID
           value: PUT_YOUR_HARNESS_ACCOUNTID_HERE
         - name: MANAGER_HOST_AND_PORT
-          value: https://app.harness.io/gratis
+          value: PUT_YOUR_MANAGER_HOST_AND_PORT_HERE
         - name: DEPLOY_MODE
           value: KUBERNETES
         - name: DELEGATE_NAME
