@@ -1,0 +1,4 @@
+serviceNamespace: ecs
+scalableDimension: ecs:service:DesiredCount
+minCapacity: 1
+maxCapacity: 3
