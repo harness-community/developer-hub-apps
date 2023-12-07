@@ -4,9 +4,9 @@ desiredCount: <+stage.variables.desiredCount>
 networkConfiguration:
   awsvpcConfiguration:
     securityGroups:
-    - sg-afc848e7 
+    - sg-a1a1a1a1 
     subnets:
-    - subnet-9757dc98
+    - subnet-9999aa99
     assignPublicIp: ENABLED 
 deploymentConfiguration:
   maximumPercent: 100
